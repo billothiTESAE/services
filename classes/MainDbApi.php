@@ -100,7 +100,7 @@
                                                 array('dbname' => $info['dbname']), $sum);
             }
             unset($main);
-            Utilities::unset_globals();
+            // Utilities::unset_globals();
             $s3_size = 0;
             if(!empty($info['s3bucket'])){                
                 $config = array('bucket' => $info['s3bucket'], 
