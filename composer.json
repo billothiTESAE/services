@@ -1,0 +1,32 @@
+{
+	"require": {
+		"ext-redis": "*",
+		"tesae/libs": "master",
+		"php": ">=8.2",
+		"aws/aws-sdk-php": "^3.342",
+        "phpoffice/phpspreadsheet": "^5.4"
+	},
+
+	"repositories": [
+		{
+			"type": "package",
+			"package" :{
+				"name" : "tesae/libs",
+				"version" : "master",
+				"source": {
+					"url":  "https://github.com/tesae/libs.git",
+					"type" : "git",
+					"reference": "main"
+				}
+			}
+        }
+
+	],
+	"scripts": {
+        "post-install-cmd": [
+			"cp -r vendor/tesae/libs/core_libs00/. core_libs00/"
+        ]
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
