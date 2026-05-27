@@ -1,6 +1,7 @@
 <?php
 require_once('../classes/PegasusS3Zip.php');
 require_once('../include.php');
+require_once('../functions.php');
 header('Content-Type: application/json');
 $resp = array();
 
