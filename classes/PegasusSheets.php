@@ -1,5 +1,4 @@
 <?php 
-    global $peg_user_data;
     use PhpOffice\PhpSpreadsheet\Spreadsheet;
     use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
     use PhpOffice\PhpSpreadsheet\Reader\Xls;

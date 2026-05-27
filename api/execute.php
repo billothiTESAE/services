@@ -1,9 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);    
-// require_once('../peg-config.php');
-// define('DEBUGMODE', 1);
-// define('MAIN_DB_EN', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);    
 require_once('../include.php');
 require_once('../classes/MainDbApi.php');
 require_once('../classes/S3Actions.php');
