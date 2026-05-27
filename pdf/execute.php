@@ -1,16 +1,11 @@
 <?php 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);   
+$rel_path = $_SERVER['SERVER_NAME'] == 'btheo8.pegcloud.io' ? '../' : '';
 require_once('../include.php');
 require_once('../functions.php');
 require_once('../classes/PegasusPdf.php');
-if(file_exists('../vendor/autoload.php')){
-	require_once '../vendor/autoload.php';
-}else{
-    //Για να μην ανεβάζω όλο το vendor
-    require_once '../../prints_libs/FPDF/fpdf.php';
-    require_once '../../prints_libs/FPDI/fpdi.php';
-}
+require_once $rel_path.'../core_libs00/FPDF/fpdf.php';
+require_once $rel_path.'../core_libs00/FPDI/fpdi.php';
+
 header('Content-Type: application/json');
 $resp = array();
 
