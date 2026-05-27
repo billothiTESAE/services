@@ -1,4 +1,5 @@
 <?php   
+use setasign\Fpdi\Fpdi;
 class PegasusPdf{
     /**
      * @var PegasusS3
@@ -89,7 +90,7 @@ class PegasusPdf{
      */
     private function merge_locally($paths){
         $no_http_header=1;
-		$pdf = new FPDI();
+		$pdf = new Fpdi();
 		// $pdf->setPrintHeader(false);
 		// $pdf->setPrintFooter(false);
         foreach ($paths as $file) {

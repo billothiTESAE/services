@@ -5,7 +5,8 @@
 		"php": ">=8.2",
 		"aws/aws-sdk-php": "^3.342",
         "phpoffice/phpspreadsheet": "^5.4",
-		"setasign/fpdi": "2.6.7"
+		"setasign/fpdf": "1.8.*",
+        "setasign/fpdi": "^2.6"
 	},
 
 	"repositories": [
