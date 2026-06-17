@@ -31,7 +31,7 @@
             $this->exp_no_titles = $params['exp_no_titles'];
             $token = Utilities::get_bearer_token();
             if(!$this->oauthCheck() || empty($token)){
-                return array('ok' => 0, 'msg' => 'Unauthorized');
+                return array('ok' => 0, 'msg' => 'Unauthorized '. $this->whatIsMyIp()['ip']);
             }
             $main = new main_db();
             $app = $main->get_app_by_token($token);
