@@ -13,8 +13,8 @@
          * Παίρνει ένα αρχειό json και από αυτό δημιουργεί ένα excel και το αποθηκεύει στο s3
          * Το path στο οποίο αποθηκεύεται είναι $path/$json_name.xlsx
          * @param array{
-         *      path: string
-         *      json_name: string
+         *      path: string,
+         *      json_name: string,
          *      decimal_number_separator: 0|1,
          *      exp_no_titles: 0|1|2,
          *      copy: string,

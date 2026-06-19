@@ -7,7 +7,7 @@ if(file_exists('../vendor/autoload.php')){
 	require_once '../vendor/autoload.php';
 }else{
     //Για να μην ανεβάζω όλο το vendor
-    require_once '../massexport_classes/includePHPExcel.php';
+    require_once '../../query_libs/vendor/autoload.php';
 }
 header('Content-Type: application/json');
 $resp = array();
