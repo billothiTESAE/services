@@ -65,7 +65,7 @@
         public function zipS3Folder($params){
             ini_set('memory_limit', '1024M');
             if(!$this->oauthCheck()){
-                return array('ok' => 0, 'msg' => 'Unauthorized');
+                return array('ok' => 0, 'msg' => 'Unauthorized' . json_encode(Utilities::what_is_my_ip()));
             }
             if(empty($params['source']) || empty($params['destination'])){
                 return array('ok' => 0, 'msg' => 'Parameters source and destination are required');
