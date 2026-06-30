@@ -104,6 +104,7 @@
         }
 
         private function unsetS3Globals(){
+            return;
             $unset = array('masterS3key', 'masterS3secret', 'masterS3region', 'masterS3bucket', 'masterS3location');
 
             foreach ($unset as $key => $value) {
